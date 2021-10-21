@@ -17,6 +17,6 @@ app.post('/add',(req,res)=>{
     res.json({"result":result})
 })
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT||3000,()=>{
     console.log("server started at http://localhost:3000")
 })
