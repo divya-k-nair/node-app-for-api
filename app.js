@@ -8,7 +8,7 @@ app.use(bodyParser.json())
 app.post('/read',(req,res)=>{
     var getName=req.body.name
     var getRoll=req.body.rollno
-    res.send(getName+" "+getRoll)
+    res.json({"Name":getName,"Rollno":getRoll})
 })
 app.post('/add',(req,res)=>{
     var getNum1=parseFloat(req.body.num1)
